@@ -1,3 +1,5 @@
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\Martin //////////////////////////////////////////////*/
+
 body{
     background: #921B18;
     margin: 0;
@@ -50,4 +52,221 @@ body{
     100% {
         transform: translateY(-10vh) scale(1);
     }
+}
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\Pablo///////////////////////////////////////////////////////*/
+    
+.expansibleTotal{
+    margin-top: 5px;
+    display: inline;
+    padding-top: 15px;  
+    padding-bottom: 15px;  
+    margin-bottom: 15px;
+    border: 3px solid rgb(159, 153, 153);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    background:rgb(216, 227, 235);
+    height: auto;
+    width: auto;
+    float:left;
+}
+
+.expansibleAbrir{
+    width: 140px;
+    height: 20px;
+    padding-left: 25%;
+    cursor: pointer;
+}
+
+.edisión{
+    text-align: center;
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img_edit{
+    width: 20px;
+    
+}
+
+.expansibleOpciones{
+    display: none;
+    user-select: none;
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 450px;
+}
+
+.Textosos{
+    padding: 4px;
+    margin-top: 3px;
+    cursor: pointer;
+    background: rgb(130, 132, 133);
+    border: 5px;
+    border-color: bisque;
+    width: 27px;
+}
+.textos{
+    width: 25px;
+}
+.textosAbiertos{
+    position: absolute;
+    left: 36px;
+    top: 3px;
+    width: 215px;
+    height: 464px;
+    background: rgb(130, 132, 133);
+    border-bottom-right-radius: 15px;
+    display: block;
+    overflow-y: scroll;
+}
+/*
+.textosAbiertos:-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar *
+}
+
+.textosAbiertos::-webkit-scrollbar-track {
+    background: rgb(130, 132, 133);       /* color of the tracking area *
+}
+
+.textosAbiertos:-webkit-scrollbar-thumb {
+    background-color: rgb(130, 132, 133);    /* color of the scroll thumb *
+    border-radius: 20px;       /* roundness of the scroll thumb *
+    border: 3px solid bisque;  /* creates padding around scroll thumb *
+}*/
+
+.fondosAbrir{
+    cursor: pointer;
+    border: 5px;
+    border-color: bisque;
+    width: 25px;
+}
+.fondoimg{
+    width: 36px;
+}
+.fondosOpciones{
+    position: absolute;
+    left: 36px;
+    top: 3px;
+    width: 215px;
+    height: 464px;
+    background: rgb(245, 245, 245);
+    border-bottom-right-radius: 15px;
+    display: none;
+    overflow-y: scroll;
+}
+.tarjetasFondo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    left: 60%;
+    top: 50%;
+}
+/*Tarjertas de fondo*/
+.tarjeta1{
+    display: block;
+    width: 650px;
+}
+.tarjeta2{
+    display: none;
+    width: 650px;
+}
+.tarjeta3{
+    display: none;
+    width: 650px;
+}
+.tarjeta4{
+    display: none;
+    width: 650px;
+}
+.tarjeta5{
+    display: none;
+    width: 500px;
+}
+.tarjeta6{
+    display: none;
+    width: 500px;
+}
+.tarjeta7{
+    display: none;
+    width: 650px;
+}
+.tarjeta8{
+    display: none;
+    width: 650px;
+}
+.tarjeta9{
+    display: none;
+    width: 650px;
+}
+.tarjeta10{
+    display: none;
+    width: 650px;
+}
+.tarjeta11{
+    display: none;
+    width: 650px;
+}
+.tarjeta12{
+    display: none;
+    width: 550px;
+}
+.tarjeta13{
+    display: none;
+    width: 650px;
+}
+.tarjeta14{
+    display: none;
+    width: 450px;
+}
+.tarjeta15{
+    display: none;
+    width: 650px;
+}
+.tarjeta16{
+    display: none;
+    width: 650px;
+}
+.tarjeta17{
+    display: none;
+    width: 400px;
+}
+.tarjeta18{
+    display: none;
+    width: 400px;
+}
+.tarjeta19{
+    display: none;
+    width: 650px;
+}
+.tarjeta20{
+    display: none;
+    width: 400px;
+}
+
+.stikersAbrir{
+    cursor: pointer;
+    background: rgb(130, 132, 133);
+    border: 5px;
+    border-color: bisque;
+    width: 35px;
+    height: 33px;
+}
+.stikerimg{
+    width: 30px;
+}
+.stikerOpciones{
+    position: absolute;
+    left: 36px;
+    top: 3px;
+    width: 215px;
+    height: 464px;
+    background: rgb(130, 132, 133);
+    border-bottom-right-radius: 15px;
+    display: none;
+    overflow-y: scroll;
 }

@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta de navidad</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="funciones.js"></script>
     
 </head>
 <body>
 
+    
+    <div class="container-general">
+        <img class="img-postal" src="postal.png">
+        <div class="formulario">
+            <label for="inputTexto">Que le quieres contar:</label>
+            <textarea id="inputTexto" placeholder="Escribe aquí..." oninput="actualizarTexto()"></textarea>
+
+            <label for="textoActualizado"></label>
+            <textarea id="textoActualizado" readonly></textarea>
+        </div>
+        
     <div class="container">
         <div class="bubbles">
             <span style="--i:11;"></span>
@@ -31,5 +43,10 @@
             <span style="--i:28;"></span>
         </div>
     </div>
+</div>
+    
+    
+    
+
 </body>
 </html>

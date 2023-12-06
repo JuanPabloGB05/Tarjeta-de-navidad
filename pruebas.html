@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualización de Texto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 300px; /* Ancho fijo */
+            height: 100px; /* Alto fijo */
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        #inputTexto, #textoActualizado {
+            width: 300px; /* Ancho fijo */
+            height: 100px; /* Alto fijo */
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        #textoActualizado {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="inputTexto">Introduce texto:</label>
+    <textarea id="inputTexto" placeholder="Escribe aquí..." oninput="actualizarTexto()"></textarea>
+
+    <label for="textoActualizado">Texto Actualizado:</label>
+    <textarea id="textoActualizado" readonly></textarea>
+
+    <script>
+        function actualizarTexto() {
+            // Obtener el valor del cuadro de texto de entrada
+            var inputTexto = document.getElementById("inputTexto").value;
+
+            // Actualizar el valor del cuadro de texto de solo lectura
+            document.getElementById("textoActualizado").value = inputTexto;
+        }
+    </script>
+
+</body>
+</html>
+

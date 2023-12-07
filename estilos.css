@@ -1,20 +1,23 @@
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\Martin //////////////////////////////////////////////*/
-
+/* Burbujas */
 body{
     background: #921B18;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.container{
-    position: relative;
-    height: 100vh;
-    width: 100%;
     overflow: hidden;
 }
 
+.container{
+    z-index: 2;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    
+}
+
 .bubbles {
+    z-index: 1;
     position: relative;
     display: flex;
     width: 100vw;
@@ -22,7 +25,8 @@ body{
 }
 
 .bubbles span{
-    flex: 4;
+    z-index: 1;
+    flex: 2;
     position: relative;
     width: 30px;
     height: 75px;
@@ -37,6 +41,7 @@ body{
 }
 
 .bubbles span:nth-child(even){
+    z-index: 1;
     background: #37F371;
     box-shadow: 0 0 0 10px #37F37144,
     0 0 50px #37F371,
@@ -54,10 +59,79 @@ body{
     }
 }
 
+/* Texto de input y output */
+
+label {
+    z-index: 3;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    z-index: 3;
+    width: 300px; 
+    height: 100px; 
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+#inputTexto, #textoActualizado {
+    z-index: 3;
+    width: 200px; 
+    height: 200px; 
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#textoActualizado {
+    z-index: 18;
+    background: transparent;
+    position: absolute;
+}
+
+
+.container-general {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.formulario{
+    z-index: 4;
+    position: absolute;
+    top: 20%; 
+    left: 70%; 
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.formularioActualizado{
+    z-index: 10;
+    position: absolute;
+    left: 155%;
+    top: 30%;
+}
+
+.img-postal {
+    z-index: 3;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 26%;
+    height: 400px;
+}
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\Pablo///////////////////////////////////////////////////////*/
     
 .expansibleTotal{
+    z-index: 7;
     margin-top: 5px;
     display: inline;
     padding-top: 15px;  
@@ -66,7 +140,7 @@ body{
     border: 3px solid rgb(159, 153, 153);
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
-    position: relative;
+    position: absolute;
     background:rgb(216, 227, 235);
     height: auto;
     width: auto;
@@ -163,61 +237,62 @@ body{
     transform: translate(-50%, -50%);
     width: auto;
     height: auto;
-    left: 60%;
-    top: 50%;
+    left: 52%;
+    top: 45%;
 }
 /*Tarjertas de fondo*/
+
 .tarjeta1{
     display: block;
-    width: 650px;
+    width:450px;
 }
 .tarjeta2{
     display: none;
-    width: 650px;
+    width: 450px;
 }
 .tarjeta3{
     display: none;
-    width: 650px;
+    width: 450px;
 }
 .tarjeta4{
     display: none;
-    width: 650px;
+    width: 450px;
 }
 .tarjeta5{
     display: none;
-    width: 500px;
+    width: 400px;
 }
 .tarjeta6{
     display: none;
-    width: 500px;
+    width: 400px;
 }
 .tarjeta7{
     display: none;
-    width: 650px;
+    width: 450px;
 }
 .tarjeta8{
     display: none;
-    width: 650px;
+    width: 450px;
 }
 .tarjeta9{
     display: none;
-    width: 650px;
+    width: 450px;
 }
 .tarjeta10{
     display: none;
-    width: 650px;
+    width: 450px;
 }
 .tarjeta11{
     display: none;
-    width: 650px;
+    width: 450px;
 }
 .tarjeta12{
     display: none;
-    width: 550px;
+    width: 450px;
 }
 .tarjeta13{
     display: none;
-    width: 650px;
+    width: 450px;
 }
 .tarjeta14{
     display: none;
@@ -247,6 +322,26 @@ body{
     display: none;
     width: 400px;
 }
+.tarjeta1f{width: 45px;}
+.tarjeta2f{width: 45px;}
+.tarjeta3f{width: 45px;}
+.tarjeta4f{width: 45px;}
+.tarjeta5f{width: 50px;}
+.tarjeta6f{width: 50px;}
+.tarjeta7f{width: 65px;}
+.tarjeta8f{width: 65px;}
+.tarjeta9f{width: 65px;}
+.tarjeta10f{width: 65px;}
+.tarjeta11f{width: 65px;}
+.tarjeta12f{width: 55px;}
+.tarjeta13f{width: 65px;}
+.tarjeta14f{width: 45px; display: none;}
+.tarjeta15f{width: 65px;}
+.tarjeta16f{width: 65px;}
+.tarjeta17f{width: 40px;}
+.tarjeta18f{width: 40px;}
+.tarjeta19f{width: 65px;}
+.tarjeta20f{width: 40px;}
 
 .stikersAbrir{
     cursor: pointer;

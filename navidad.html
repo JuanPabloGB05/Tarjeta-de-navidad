@@ -5,21 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta de navidad</title>
     <link rel="stylesheet" href="estilos.css">
-    <script src="funciones.js"></script>
-    
+    <script class="navidad.js"></script>
 </head>
 <body>
+    <div class="expansibleTotal">
+        <div class="expansibleAbrir">
+            <span class="edisión"><b>edisión</b></span>
+            <img class="img_edit" src="lapiz paeditar.png">
+        </div>
+        <div class="expansibleOpciones">
+            <div class="Textosos">
+                <img class="textos" src="T de texto.png">
+            </div>
+            <div class="textosAbiertos">
+                <div class="container-general">
+                    <div class="formulario">
+                        <label for="inputTexto">Que le quieres contar:</label>
+                        <textarea id="inputTexto" placeholder="Escribe aquí..." oninput="actualizarTexto()"></textarea>
+                    </div>  
+                </div>
+            </div>
+            <div class="formularioActualizado">
+                        <label for="textoActualizado"></label>
+                        <textarea id="textoActualizado" readonly></textarea>
+                </div>
+
+            <div class="fondosAbrir">
+                <img class="fondoimg" src="fondos.jpg">
+            </div>
+            <div class="fondosOpciones">
+                <img src="fondos/tarjeta-navidad-1a.jpg" class="tarjeta1f">
+                <img src="fondos/tarjeta-navidad-2a.jpg" class="tarjeta2f">
+                <img src="fondos/tarjeta-navidad-3a.png" class="tarjeta3f">
+                <img src="fondos/tarjeta-navidad-4a.png" class="tarjeta4f">
+                <img src="fondos/tarjeta-navidad-5a.png" class="tarjeta5f">
+                <img src="fondos/tarjeta-navidad-6a.png" class="tarjeta6f">
+                <img src="fondos/tarjeta-navidad-7a.png" class="tarjeta7f">
+                <img src="fondos/tarjeta-navidad-8a.png" class="tarjeta8f">
+                <img src="fondos/tarjeta-navidad-9a.png" class="tarjeta9f">
+                <img src="fondos/tarjeta-navidad-10a.png" class="tarjeta10f">
+                <img src="fondos/tarjeta-navidad-11a.jpg" class="tarjeta11f">
+                <img src="fondos/tarjeta-navidad-12a.jpg" class="tarjeta12f">
+                <img src="fondos/tarjeta-navidad-13a.png" class="tarjeta13f">
+                <img src="fondos/tarjeta-navidad-14a.png" class="tarjeta14f">
+                <img src="fondos/tarjeta-navidad-15a.png" class="tarjeta15f">
+                <img src="fondos/tarjeta-navidad-16a.png" class="tarjeta16f">
+                <img src="fondos/tarjeta-navidad-17a.png" class="tarjeta17f">
+                <img src="fondos/tarjeta-navidad-18a.png" class="tarjeta18f">
+                <img src="fondos/tarjeta-navidad-19a.png" class="tarjeta19f">
+                <img src="fondos/tarjeta-navidad-20a.png" class="tarjeta20f">
+            </div>
+
+            <div class="stikersAbrir">
+                <img class="stikerimg" src="stiker menu.png"> 
+            </div>
+            <div class="stikerOpciones">
+                
+            </div>
+        </div>
+    </div>
+    <div class="tarjetasFondo">
+        <img src="fondos/tarjeta-navidad-1a.jpg" class="tarjeta1">
+        <img src="fondos/tarjeta-navidad-2a.jpg" class="tarjeta2">
+        <img src="fondos/tarjeta-navidad-3a.png" class="tarjeta3">
+        <img src="fondos/tarjeta-navidad-4a.png" class="tarjeta4">
+        <img src="fondos/tarjeta-navidad-5a.png" class="tarjeta5">
+        <img src="fondos/tarjeta-navidad-6a.png" class="tarjeta6">
+        <img src="fondos/tarjeta-navidad-7a.png" class="tarjeta7">
+        <img src="fondos/tarjeta-navidad-8a.png" class="tarjeta8">
+        <img src="fondos/tarjeta-navidad-9a.png" class="tarjeta9">
+        <img src="fondos/tarjeta-navidad-10a.png" class="tarjeta10">
+        <img src="fondos/tarjeta-navidad-11a.jpg" class="tarjeta11">
+        <img src="fondos/tarjeta-navidad-12a.jpg" class="tarjeta12">
+        <img src="fondos/tarjeta-navidad-13a.png" class="tarjeta13">
+        <img src="fondos/tarjeta-navidad-14a.png" class="tarjeta14">
+        <img src="fondos/tarjeta-navidad-15a.png" class="tarjeta15">
+        <img src="fondos/tarjeta-navidad-16a.png" class="tarjeta16">
+        <img src="fondos/tarjeta-navidad-17a.png" class="tarjeta17">
+        <img src="fondos/tarjeta-navidad-18a.png" class="tarjeta18">
+        <img src="fondos/tarjeta-navidad-19a.png" class="tarjeta19">
+        <img src="fondos/tarjeta-navidad-20a.png" class="tarjeta20">
+    </div>
+    
 
     
-    <div class="container-general">
-        <img class="img-postal" src="postal.png">
-        <div class="formulario">
-            <label for="inputTexto">Que le quieres contar:</label>
-            <textarea id="inputTexto" placeholder="Escribe aquí..." oninput="actualizarTexto()"></textarea>
-
-            <label for="textoActualizado"></label>
-            <textarea id="textoActualizado" readonly></textarea>
-        </div>
         
     <div class="container">
         <div class="bubbles">
@@ -44,9 +113,7 @@
         </div>
     </div>
 </div>
-    
-    
-    
-
+   
+    <script src="navidad.js"></script>
 </body>
 </html>

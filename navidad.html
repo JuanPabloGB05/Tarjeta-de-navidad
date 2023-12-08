@@ -17,20 +17,20 @@
             <div class="Textosos">
                 <img class="textos" src="T de texto.png">
             </div>
-            <div class="textosAbiertos">
+            <div class="textosAbiertos" onclick="abrirTexto()">
                 <div class="container-general">
-                    <div class="formulario">
-                        <label for="inputTexto">Que le quieres contar:</label>
-                        <textarea id="inputTexto" placeholder="Escribe aquí..." oninput="actualizarTexto()"></textarea>
+                    <div class="formulario" id="miTexto">
+                        <label for="inputTexto">Dedica tus palabras:</label>
+                        <textarea id="inputTexto" placeholder="Escribe aquí..." oninput="actualizarTexto()" maxlength="50"></textarea>
                     </div>  
                 </div>
             </div>
             <div class="formularioActualizado">
                         <label for="textoActualizado"></label>
-                        <textarea id="textoActualizado" readonly></textarea>
+                        <textarea id="textoActualizado" readonly maxlength="50"></textarea>
                 </div>
 
-            <div class="fondosAbrir">
+            <div class="fondosAbrir" onclick="cerrarTexto()">
                 <img class="fondoimg" src="fondos.jpg">
             </div>
             <div class="fondosOpciones">
